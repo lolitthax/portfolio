@@ -16,3 +16,20 @@ ul{
     padding: 0px;
     list-style: none;
 }
+.container{
+    max-width: 1200px;
+    padding: 40px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+}
+.subtitle{
+    font-size: 8rem;
+    word-break: break-all;
+    line-height: 1;
+    text-transform: uppercase;
+    max-width: 4ch;
+}
+
+

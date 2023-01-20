@@ -3,23 +3,23 @@
 
 
 /* INTRO */
-.introduction{
-    max-width: 1200px;
-    padding: 40px 20px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 100px;
+.introduction {
     align-items: center;
 }
-.introduction h1{
+
+.introduction img {
+    max-width: 100%;
+}
+
+.introduction h1 {
     font-size: 4.5rem;
     line-height: 1.125;
     margin-bottom: 30px;
     position: relative;
 
 }
-.introduction h1::before{
+
+.introduction h1::before {
     content: "";
     display: block;
     width: 130px;
@@ -31,34 +31,149 @@
     z-index: -1;
 
 }
-.introduction p{
+
+.introduction p {
     font-size: 1.5rem;
     color: #525252;
 }
-@media (max-width: 1000px){
-    .introduction h1{
+
+
+/* EXP */
+.exp .subtitle {
+    color: #e0e0e0;
+}
+
+.exp-text {
+    font-size: 1.5rem;
+    line-height: 1.33;
+    margin-bottom: 60px;
+    max-width: 40ch;
+    color: #525252;
+}
+
+.exp-text strong {
+    color: #141414;
+}
+
+.work {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    background-color: #f5f5f5;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    position: relative;
+    gap: 10px 20px;
+}
+
+.work::before {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 20px;
+    background: linear-gradient(#48dbfb, #0abde3);
+    position: absolute;
+    top: 20px;
+    left: -4;
+}
+
+.work-year {
+    position: absolute;
+    top: 22px;
+    left: -100px;
+    color: #525252;
+    font-size: 0.875rem;
+    width: 80px;
+    text-align: right;
+}
+
+.work-title {
+    font-size: 1.125rem;
+    line-height: 1.1;
+    font-weight: bold;
+}
+
+.work-text {
+    font-size: 0.875rem;
+    color: #525252;
+    line-height: 1.4;
+}
+
+.work-itens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-content: start;
+}
+
+.work-itens li {
+    font-size: 0.875rem;
+    line-height: 1.4;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+@media (max-width: 1000px) {
+    .introduction h1 {
         font-size: 3rem;
     }
 }
-@media (max-width: 800px){
-    .introduction{
+
+@media (max-width: 800px) {
+    .introduction {
         grid-template-columns: 1fr 1fr;
         gap: 40px;
     }
-    .introduction h1{
+    .introduction img{
+        display: none;
+    }
+    .introduction h1 {
         font-size: 2rem;
     }
-    .introduction h1::before{
+
+    .introduction h1::before {
         width: 30px;
         height: 10px;
         left: 0px;
-        
+
     }
-    
+    .exp{
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+  
+    .subtitle{
+        font-size: 3rem;
+        text-transform: capitalize;
+        max-width: initial;
+    }
+    .exp-text{
+        font-size: 1.25rem;
+    }
+    .work-year{
+        position: initial;
+        order: 1;
+        width: initial;
+        text-align: left;
+    }
+    .work-year::before{
+        content: "Ano: ";
+    }
+
 }
 
-@media (max-width: 400px){
-    .introduction{
-       grid-template-columns: 1fr; 
+@media (max-width: 400px) {
+    .introduction {
+        grid-template-columns: 1fr;
+    }
+    .introduction img{
+        display: none;
+    }
+    .introduction h1{
+        font-size: 1.4rem;
+    }
+
+    .work{
+        grid-template-columns: 1fr;
     }
 }
