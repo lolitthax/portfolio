@@ -5,17 +5,7 @@
 .formation .subtitle{
     color: black;
 }
-.formation-text{
-    font-size: 1.5rem;
-    line-height: 1.33;
-    margin-bottom: 60px;
-    max-width: 40ch;
-    color: #a3a3a3;
-}
 
-.formation-text strong{
-    color: #ffffff;
-}
 .college-list{
     display: flex;
     flex-wrap: wrap;
@@ -44,16 +34,6 @@
     line-height: 1.4;
     margin-bottom: 40px;
     position: relative;
-}
-
-.college-course::before{
-    content: "";
-    display: block;
-    width: 4px;
-    height: 20px;
-    background: linear-gradient(#48dbfb, #0abde3);
-    position: absolute;
-    left: -24;
 }
 
 .college-name{
