@@ -11,12 +11,14 @@ p {
     margin: 0px;
 }
 
-ul{
+ul {
     margin: 0px;
     padding: 0px;
     list-style: none;
 }
-.container, .formation-container{
+
+.container,
+.formation-container {
     max-width: 1200px;
     padding: 40px 20px;
     margin: 0 auto;
@@ -24,12 +26,20 @@ ul{
     grid-template-columns: 1fr 2fr;
     gap: 100px;
 }
-.subtitle{
+.footer-container{
+    max-width: 1200px;
+    padding: 120px 20px 60px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px; 
+    align-items: center;
+}
+
+.subtitle {
     font-size: 8rem;
     word-break: break-all;
     line-height: 1;
     text-transform: uppercase;
     max-width: 4ch;
 }
-
-
