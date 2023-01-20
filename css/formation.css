@@ -1,0 +1,91 @@
+.formation{
+    background-color: #141414;
+   color: white;
+}
+.formation .subtitle{
+    color: black;
+}
+.formation-text{
+    font-size: 1.5rem;
+    line-height: 1.33;
+    margin-bottom: 60px;
+    max-width: 40ch;
+    color: #a3a3a3;
+}
+
+.formation-text strong{
+    color: #ffffff;
+}
+.college-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+    margin-bottom: 60px;
+}
+
+.college-type{
+    flex: 1;
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+}
+.college-level{
+    font-size: .875rem;
+    text-transform: uppercase;
+    color: #a3a3a3;
+    margin-bottom: 10px;
+}
+
+.college-course{
+    flex: 1;
+    font-size: 1.125rem;
+    line-height: 1.4;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.college-course::before{
+    content: "";
+    display: block;
+    width: 4px;
+    height: 20px;
+    background: linear-gradient(#48dbfb, #0abde3);
+    position: absolute;
+    left: -24;
+}
+
+.college-name{
+    font-size: 1.125rem;
+    color: #a3a3a3;
+}
+
+.courses{
+    margin-bottom: 60px;
+}
+
+.formation-extra h3{
+    font-size: 0.875rem;
+    line-height: 1.4;
+    color: #8f8f8f;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    position: relative;
+}
+.formation-extra h3::before{
+    display: block;
+    content: "";
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: -36px;
+    top: -4px;
+}
+
+.courses h3::before{
+    background: url("../img/cursos.svg") no-repeat center center;
+}
+.languages{
+    background: url("../img/idiomas.svg") no-repeat center center;
+}

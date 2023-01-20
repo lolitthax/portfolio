@@ -16,7 +16,7 @@ ul{
     padding: 0px;
     list-style: none;
 }
-.container{
+.container, .formation-container{
     max-width: 1200px;
     padding: 40px 20px;
     margin: 0 auto;
